@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создайте аккаунт Google</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/reg_form_style.css" />
+    <link rel="shortcut icon" href="assets/logo/google.png" />
+  </head>
+  <body>
+    <form class="regform">
+      <div class="regform__basic">
+        <img
+          class="regform__logo"
+          src="assets/logo/google_logo.svg"
+          alt="Google"
+        />
+        <h1 class="regform__heading">Создайте аккаунт Google</h1>
+        <div class="regform__names">
+          <input type="text" class="regform__name inputs" placeholder="Имя" />
+          <input
+            type="text"
+            class="regform__lastname inputs"
+            placeholder="Фамилия"
+          />
+        </div>
+        <input
+          type="text"
+          class="regform__email inputs"
+          placeholder="Имя пользователя"
+        />
+        <p class="regform__hint">
+          Можно использовать буквы латинского алфавита, цифры и точки.
+        </p>
+        <input
+          type="button"
+          class="regform__yourEmail inputs"
+          value="Использоавать текущий адрес электронной почты"
+        />
+        <div class="regform__parole">
+          <input
+            type="text"
+            class="regform__password inputs"
+            placeholder="Пароль"
+          />
+          <input
+            type="text"
+            class="regform__confirm inputs"
+            placeholder="Подтвердить"
+          />
+        </div>
+        <p class="regform__parole_hint">
+          Пароль должен содержать не менее восьми знаков, включать буквы, цифры
+          и специальные символы
+        </p>
+        <input
+          type="checkbox"
+          id="password"
+          name="password"
+          class="regform__checkbox inputs"
+        />
+        <label for="password"> Показать пароль</label>
+        <div class="regform__buttons">
+          <input type="button" class="regform__login button" value="Войти" />
+          <button class="regform__next button">Далее</button>
+        </div>
+      </div>
+      <div class="regform__visual">
+        <img
+          class="regform__img"
+          src="assets/images/account.svg"
+          alt="Google"
+        />
+        <p class="regform__visual_text">
+          Один аккаунт – для всех сервисов Google.
+        </p>
+      </div>
+    </form>
+    <footer class="footer">
+      <select name="footer__select">
+        <option value="1">Русский</option>
+        <option value="2">English</option>
+        <option value="3">Espanol</option>
+        <option value="4">Deutsch</option>
+        <option value="5">Српски</option>
+        <option value="6">Indonesia</option>
+      </select>
+      <nav class="footer__nav">
+        <a class="footer__nav_link" href="#">Справка</a>
+        <a class="footer__nav_link" href="#">Конфиденциальность</a>
+        <a class="footer__nav_link" href="#">Условия</a>
+      </nav>
+    </footer>
+    <script src="assets/script/reg_form_script.js"></script>
+  </body>
+</html>
