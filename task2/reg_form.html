@@ -28,30 +28,34 @@
         </div>
         <input
           type="text"
+          id="regform__email"
           class="regform__email inputs"
           placeholder=" Имя пользователя"
         />
-        <p class="regform__hint">
+        <p class="regform__hint hint">
           Можно использовать буквы латинского алфавита, цифры и точки.
         </p>
         <input
           type="button"
           class="regform__yourEmail inputs"
-          value="Использоавать текущий адрес электронной почты"
+          value="Использовать текущий адрес электронной почты"
         />
         <div class="regform__parole">
           <input
             type="text"
+            id="regform__password"
             class="regform__password inputs"
             placeholder=" Пароль"
           />
           <input
             type="text"
+            id="regform__confirm"
             class="regform__confirm inputs"
             placeholder=" Подтвердить"
           />
         </div>
-        <p class="regform__parole_hint">
+        <div id="regform__error"></div>
+        <p class="regform__parole_hint hint">
           Пароль должен содержать не менее восьми знаков, включать буквы, цифры
           и специальные символы
         </p>
@@ -69,7 +73,9 @@
             value="Войти"
             onclick="changeColor()"
           />
-          <button class="regform__next button">Далее</button>
+          <button class="regform__next button" onclick="checkError()">
+            Далее
+          </button>
         </div>
       </div>
       <div class="regform__visual">

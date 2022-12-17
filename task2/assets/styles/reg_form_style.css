@@ -52,7 +52,7 @@ body {
   padding-bottom: 0;
   padding-top: 16px;
   font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.3333;
   margin-bottom: 0;
@@ -103,6 +103,7 @@ body {
 
 .regform__yourEmail {
   width: 100%;
+  margin: 0;
   color: #bbbbbb;
   background: none;
   cursor: pointer;
@@ -161,6 +162,14 @@ body {
   border: none;
   background-color: rgb(243, 250, 255);
   color: #125b8f;
+}
+
+#regform__error {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 0.8rem;
+  color: red;
 }
 
 .regform__next {
@@ -273,4 +282,49 @@ body {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .regform__visual {
+    display: none;
+  }
+  .regform__basic {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .regform {
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    margin: 0 5% 0 3%;
+    padding: 0;
+  }
+  .regform__basic,
+.regform__visual,
+.footer {
+    display: block;
+  }
+  .regform__yourEmail {
+    width: 90%;
+    margin: 0 5% 0 3%;
+  }
+  .regform__visual {
+    display: none;
+  }
+  .regform__heading {
+    font-size: 1rem;
+  }
+  .hint {
+    font-size: 0.8rem;
+  }
+  .footer__select-wrapper {
+    width: 25%;
+    margin: auto 0 auto 10px;
+  }
 }/*# sourceMappingURL=reg_form_style.css.map */
