@@ -60,6 +60,7 @@ body {
 .regform__buttons,
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .regform__name,
@@ -143,12 +144,16 @@ body {
   background-color: rgb(243, 250, 255);
   color: #125b8f;
 }
-#regform__error {
+#regform__error,
+#regform__names_error {
   display: flex;
   justify-content: center;
   padding: 5px;
   font-size: 0.8rem;
   color: red;
+}
+#regform__names_error {
+  margin-top: -10px;
 }
 .regform__next {
   background-color: #1a73e8;

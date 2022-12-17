@@ -19,12 +19,19 @@
         />
         <h1 class="regform__heading">Создайте аккаунт Google</h1>
         <div class="regform__names">
-          <input type="text" class="regform__name inputs" placeholder=" Имя" />
           <input
             type="text"
+            id="regform__name"
+            class="regform__name inputs"
+            placeholder=" Имя"
+          />
+          <input
+            type="text"
+            id="regform__lastname"
             class="regform__lastname inputs"
             placeholder=" Фамилия"
           />
+          <div id="regform__names_error"></div>
         </div>
         <input
           type="text"
@@ -42,13 +49,13 @@
         />
         <div class="regform__parole">
           <input
-            type="text"
+            type="password"
             id="regform__password"
             class="regform__password inputs"
             placeholder=" Пароль"
           />
           <input
-            type="text"
+            type="password"
             id="regform__confirm"
             class="regform__confirm inputs"
             placeholder=" Подтвердить"
