@@ -19,17 +19,17 @@
         />
         <h1 class="regform__heading">Создайте аккаунт Google</h1>
         <div class="regform__names">
-          <input type="text" class="regform__name inputs" placeholder="Имя" />
+          <input type="text" class="regform__name inputs" placeholder=" Имя" />
           <input
             type="text"
             class="regform__lastname inputs"
-            placeholder="Фамилия"
+            placeholder=" Фамилия"
           />
         </div>
         <input
           type="text"
           class="regform__email inputs"
-          placeholder="Имя пользователя"
+          placeholder=" Имя пользователя"
         />
         <p class="regform__hint">
           Можно использовать буквы латинского алфавита, цифры и точки.
@@ -43,12 +43,12 @@
           <input
             type="text"
             class="regform__password inputs"
-            placeholder="Пароль"
+            placeholder=" Пароль"
           />
           <input
             type="text"
             class="regform__confirm inputs"
-            placeholder="Подтвердить"
+            placeholder=" Подтвердить"
           />
         </div>
         <p class="regform__parole_hint">
@@ -61,9 +61,14 @@
           name="password"
           class="regform__checkbox inputs"
         />
-        <label for="password"> Показать пароль</label>
+        <label for="password" class="password-label"> Показать пароль</label>
         <div class="regform__buttons">
-          <input type="button" class="regform__login button" value="Войти" />
+          <input
+            type="button"
+            class="regform__login button"
+            value="Войти"
+            onclick="changeColor()"
+          />
           <button class="regform__next button">Далее</button>
         </div>
       </div>
@@ -79,14 +84,16 @@
       </div>
     </form>
     <footer class="footer">
-      <select name="footer__select">
-        <option value="1">Русский</option>
-        <option value="2">English</option>
-        <option value="3">Espanol</option>
-        <option value="4">Deutsch</option>
-        <option value="5">Српски</option>
-        <option value="6">Indonesia</option>
-      </select>
+      <div class="footer__select-wrapper">
+        <select name="footer__select" class="footer__select">
+          <option value="1" class="option">Русский</option>
+          <option value="2" class="option">English</option>
+          <option value="3" class="option">Espanol</option>
+          <option value="4" class="option">Deutsch</option>
+          <option value="5" class="option">Српски</option>
+          <option value="6" class="option">Indonesia</option>
+        </select>
+      </div>
       <nav class="footer__nav">
         <a class="footer__nav_link" href="#">Справка</a>
         <a class="footer__nav_link" href="#">Конфиденциальность</a>
