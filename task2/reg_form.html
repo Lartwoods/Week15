@@ -31,15 +31,15 @@
             class="regform__lastname inputs"
             placeholder=" Фамилия"
           />
-          <div id="regform__names_error"></div>
         </div>
+        <div id="regform__names_error"></div>
         <input
           type="text"
           id="regform__email"
           class="regform__email inputs"
           placeholder=" Имя пользователя"
         />
-        <p class="regform__hint hint">
+        <p id="regform__hint" class="regform__hint hint">
           Можно использовать буквы латинского алфавита, цифры и точки.
         </p>
         <input
@@ -51,7 +51,7 @@
           <input
             type="password"
             id="regform__password"
-            class="regform__password inputs"
+            class="inputs"
             placeholder=" Пароль"
           />
           <input
@@ -78,11 +78,14 @@
             type="button"
             class="regform__login button"
             value="Войти"
-            onclick="changeColor()"
+            onclick="checkError()"
           />
-          <button class="regform__next button" onclick="checkError()">
-            Далее
-          </button>
+          <input
+            type="button"
+            class="regform__next button"
+            value="Далее"
+            onclick="checkError()"
+          />
         </div>
       </div>
       <div class="regform__visual">

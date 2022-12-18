@@ -65,7 +65,7 @@ body {
 }
 .regform__name,
 .regform__lastname,
-.regform__password,
+#regform__password,
 .regform__confirm {
   width: 48%;
 }
@@ -74,6 +74,11 @@ body {
   height: 35px;
   margin: 4% 0;
   border: 1px solid #bbbbbb;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 .inputs:focus,
 .inputs:hover {
@@ -112,7 +117,7 @@ body {
   text-align: center;
   color: #6f6f6f;
 }
-.regform__password,
+#regform__password,
 .regform__confirm {
   margin-bottom: 0;
 }

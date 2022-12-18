@@ -3,6 +3,8 @@ function checkError() {
   let password = document.getElementById("regform__password");
   let yourName = document.getElementById("regform__name");
   let yourLast = document.getElementById("regform__lastname");
+  document.getElementById("regform__error").innerHTML = "";
+  document.getElementById("regform__names_error").innerHTML = "";
 
   if (email.value == "") {
     document.getElementById("regform__error").innerHTML +=
